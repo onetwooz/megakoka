@@ -267,43 +267,43 @@ def send_text(message):
         bot.send_message(message.chat.id, 'https://www.youtube.com/watch?v=juoiLkiMNIc')
     
     elif message.text.lower() == "86":
-        bot.send_message(message.chat.id, '404')
+        bot.send_message(message.chat.id, 'С 86 по 98 и со 101 по 110 видосов нет')
     
     elif message.text.lower() == "87":
-        bot.send_message(message.chat.id, '404')
+        bot.send_message(message.chat.id, 'С 86 по 98 и со 101 по 110 видосов нет')
 
     elif message.text.lower() == "88":
-        bot.send_message(message.chat.id, '404')
+        bot.send_message(message.chat.id, 'С 86 по 98 и со 101 по 110 видосов нет')
     
     elif message.text.lower() == "89":
-        bot.send_message(message.chat.id, '404')
+        bot.send_message(message.chat.id, 'С 86 по 98 и со 101 по 110 видосов нет')
     
     elif message.text.lower() == "90":
-        bot.send_message(message.chat.id, '404')
+        bot.send_message(message.chat.id, 'С 86 по 98 и со 101 по 110 видосов нет')
     
     elif message.text.lower() == "91":
-        bot.send_message(message.chat.id, '404')
+        bot.send_message(message.chat.id, 'С 86 по 98 и со 101 по 110 видосов нет')
     
     elif message.text.lower() == "92":
-        bot.send_message(message.chat.id, '404')
+        bot.send_message(message.chat.id, 'С 86 по 98 и со 101 по 110 видосов нет')
     
     elif message.text.lower() == "93":
-        bot.send_message(message.chat.id, '404')
+        bot.send_message(message.chat.id, 'С 86 по 98 и со 101 по 110 видосов нет')
     
     elif message.text.lower() == "94":
-        bot.send_message(message.chat.id, '404')
+        bot.send_message(message.chat.id, 'С 86 по 98 и со 101 по 110 видосов нет')
     
     elif message.text.lower() == "95":
-        bot.send_message(message.chat.id, '404')
+        bot.send_message(message.chat.id, 'С 86 по 98 и со 101 по 110 видосов нет')
     
     elif message.text.lower() == "96":
-        bot.send_message(message.chat.id, '404')
+        bot.send_message(message.chat.id, 'С 86 по 98 и со 101 по 110 видосов нет')
     
     elif message.text.lower() == "97":
-        bot.send_message(message.chat.id, '404')
+        bot.send_message(message.chat.id, 'С 86 по 98 и со 101 по 110 видосов нет')
     
     elif message.text.lower() == "98":
-        bot.send_message(message.chat.id, '404')
+        bot.send_message(message.chat.id, 'С 86 по 98 и со 101 по 110 видосов нет')
     
     elif message.text.lower() == "99":
         bot.send_message(message.chat.id, 'https://www.youtube.com/watch?v=_EmBwLTLgxg')
@@ -312,34 +312,34 @@ def send_text(message):
         bot.send_message(message.chat.id, 'https://www.youtube.com/watch?v=LAlQqWmh_Io')
 
     elif message.text.lower() == "101":
-        bot.send_message(message.chat.id, '404')
+        bot.send_message(message.chat.id, 'С 86 по 98 и со 101 по 110 видосов нет')
 
     elif message.text.lower() == "102":
-        bot.send_message(message.chat.id, '404')
+        bot.send_message(message.chat.id, 'С 86 по 98 и со 101 по 110 видосов нет')
 
     elif message.text.lower() == "103":
-        bot.send_message(message.chat.id, '404')
+        bot.send_message(message.chat.id, 'С 86 по 98 и со 101 по 110 видосов нет')
 
     elif message.text.lower() == "104":
-        bot.send_message(message.chat.id, '404')
+        bot.send_message(message.chat.id, 'С 86 по 98 и со 101 по 110 видосов нет')
 
     elif message.text.lower() == "105":
-        bot.send_message(message.chat.id, '404')
+        bot.send_message(message.chat.id, 'С 86 по 98 и со 101 по 110 видосов нет')
 
     elif message.text.lower() == "106":
-        bot.send_message(message.chat.id, '404')
+        bot.send_message(message.chat.id, 'С 86 по 98 и со 101 по 110 видосов нет')
 
     elif message.text.lower() == "107":
-        bot.send_message(message.chat.id, '404')
+        bot.send_message(message.chat.id, 'С 86 по 98 и со 101 по 110 видосов нет')
 
     elif message.text.lower() == "108":
-        bot.send_message(message.chat.id, '404')
+        bot.send_message(message.chat.id, 'С 86 по 98 и со 101 по 110 видосов нет')
 
     elif message.text.lower() == "109":
-        bot.send_message(message.chat.id, '404')
+        bot.send_message(message.chat.id, 'С 86 по 98 и со 101 по 110 видосов нет')
 
     elif message.text.lower() == "110":
-        bot.send_message(message.chat.id, '404')
+        bot.send_message(message.chat.id, 'С 86 по 98 и со 101 по 110 видосов нет')
 
     elif message.text.lower() == "111":
         bot.send_message(message.chat.id, 'https://www.youtube.com/watch?v=AchsISi5178')
