@@ -347,8 +347,8 @@ def send_text(message):
     elif message.text.lower() == "🤛🏾":
         bot.send_message(message.chat.id, '🤜🏾')
                          
-    elif message.text.lower() == "Эски":
-        bot.send_message(message.chat.id, 'Эйп')       
+    elif message.text.lower() == "эски":
+        bot.send_message(message.chat.id, 'эйп')       
         
     else:
         bot.send_message(message.chat.id, 'Я могу показать тебе урок от 1 до 111') 
