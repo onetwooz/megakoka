@@ -7,7 +7,7 @@ bot = telebot.TeleBot('1194604461:AAFhtKcrxmeMaPcEDMdPDplnqHnHj6f72ZI')
 @bot.message_handler(commands=['start'])
 def start_message(message):
     bot.send_sticker(message.chat.id, 'CAACAgIAAxkBAAI-hl6JrcYcXMNK-Hlb3ItPeqCgPFzqAALqAgACtXHaBr_PemH5zBx1GAQ')
-    bot.send_message(message.chat.id, 'Привет, {0.first_name}!\n Ты мне номер урока, я тебе видос. Погнали!')
+    bot.send_message(message.chat.id, 'Привет, {0.first_name}\n! Ты мне номер урока, я тебе видос. Погнали!')
  
 @bot.message_handler(content_types=['text'])
 def send_text(message):
