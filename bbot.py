@@ -4,10 +4,6 @@ import os
 
 bot = telebot.TeleBot('1194604461:AAFhtKcrxmeMaPcEDMdPDplnqHnHj6f72ZI')
 
-pstop = message.text.lower()
-    if pstop >= 112
-        bot.send_message(message.chat.id, 'У меня только 111')
-
 @bot.message_handler(commands=['start'])
 def start_message(message):
     bot.send_sticker(message.chat.id, 'CAACAgIAAxkBAAI-hl6JrcYcXMNK-Hlb3ItPeqCgPFzqAALqAgACtXHaBr_PemH5zBx1GAQ')
