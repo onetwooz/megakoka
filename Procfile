@@ -1,1 +1,1 @@
-web: python bbot.py
+web: python bbot.py $PORT
