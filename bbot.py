@@ -343,5 +343,8 @@ def send_text(message):
 
     elif message.text.lower() == "111":
         bot.send_message(message.chat.id, 'https://www.youtube.com/watch?v=AchsISi5178')
+    
+    else bot.send_message(message.chat.id, 'Какой урок ты ищешь?') 
+
         
 bot.polling( none_stop = True )
