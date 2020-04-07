@@ -344,7 +344,7 @@ def send_text(message):
     elif message.text.lower() == "111":
         bot.send_message(message.chat.id, 'https://www.youtube.com/watch?v=AchsISi5178')
 
-    elif message.text.lower() >= "112":
+    elif message.text.lower() >= 112:
         bot.send_message(message.chat.id, 'У меня есть только до 111 🤷🏾‍♂️')
     
     else:
