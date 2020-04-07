@@ -4,8 +4,6 @@ import os
 
 bot = telebot.TeleBot('1194604461:AAFhtKcrxmeMaPcEDMdPDplnqHnHj6f72ZI')
 
-pointstop = 112
-
 @bot.message_handler(commands=['start'])
 def start_message(message):
     bot.send_sticker(message.chat.id, 'CAACAgIAAxkBAAI-hl6JrcYcXMNK-Hlb3ItPeqCgPFzqAALqAgACtXHaBr_PemH5zBx1GAQ')
@@ -346,9 +344,6 @@ def send_text(message):
     elif message.text.lower() == "111":
         bot.send_message(message.chat.id, 'https://www.youtube.com/watch?v=AchsISi5178')
         
-    elif message.text.lower() >= pointstop:
-        bot.send_message(message.chat.id, 'У меня есть только до 111 🤷🏾‍♂️')
-    
     else:
         bot.send_message(message.chat.id, 'Я умею только показывать уроки\nУ меня есть почти все от 1 до 111') 
 
