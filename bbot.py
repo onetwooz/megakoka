@@ -344,8 +344,8 @@ def send_text(message):
     elif message.text.lower() == "111":
         bot.send_message(message.chat.id, 'https://www.youtube.com/watch?v=AchsISi5178')
         
-    elif message.text.lower() == "Ктотебясоздал":
-        bot.send_message(message.chat.id, '@e_roket - он оч крутой')
+    elif message.text.lower() == "Кто тебя создал?":
+        bot.send_message(message.chat.id, '@e_roket - он оч крутой')        
         
     else:
         bot.send_message(message.chat.id, 'Я могу показать тебе урок от 1 до 111') 
