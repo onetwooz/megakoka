@@ -354,7 +354,7 @@ def send_text(message):
         bot.send_message(message.chat.id, '@e_rocket')
         
     elif message.text.lower() == "тиай":
-        sti = open('static/sticker.webp', 'rb'
+        sti = open('static/sticker.webp', 'rb')
         bot.send_sticker(message.chat.id, sti)        
         
     else:
