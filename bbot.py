@@ -7,7 +7,7 @@ bot = telebot.TeleBot('1194604461:AAFhtKcrxmeMaPcEDMdPDplnqHnHj6f72ZI')
 @bot.message_handler(commands=['start'])
 def start_message(message):
     bot.send_sticker(message.chat.id, 'CAACAgIAAxkBAAI-hl6JrcYcXMNK-Hlb3ItPeqCgPFzqAALqAgACtXHaBr_PemH5zBx1GAQ')
-    bot.send_message(message.chat.id, 'Добро пожаловать, {0.first_name}!\n Я - {1.first_name}, и могу показать видео по номеру урока из канала @scottbasslessons '.format(message.from_user, bot.get_me(), parse_mode="html"))
+    bot.send_message(message.chat.id, 'Привет, {0.first_name}!\n Я - {1.first_name}, и могу показать видео по номеру урока из канала @scottbasslessons '.format(message.from_user, bot.get_me(), parse_mode="html"))
  
 @bot.message_handler(content_types=['text'])
 def send_text(message):
