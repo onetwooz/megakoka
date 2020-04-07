@@ -1,7 +1,6 @@
 import telebot
+from telebot import types
 import os
-from flask import Flask, request
-import logging
 
 bot = telebot.TeleBot('1194604461:AAFhtKcrxmeMaPcEDMdPDplnqHnHj6f72ZI')
 
