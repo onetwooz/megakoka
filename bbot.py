@@ -348,7 +348,10 @@ def send_text(message):
         bot.send_message(message.chat.id, '🤜🏾')
                          
     elif message.text.lower() == "эски":
-        bot.send_message(message.chat.id, 'эйп')       
+        bot.send_message(message.chat.id, 'эйп')
+        
+    elif message.text.lower() == "кто тебя создал?":
+        bot.send_message(message.chat.id, '@e_rokcet')        
         
     else:
         bot.send_message(message.chat.id, 'Я могу показать тебе урок от 1 до 111') 
