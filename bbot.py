@@ -345,7 +345,7 @@ def send_text(message):
         bot.send_message(message.chat.id, 'https://www.youtube.com/watch?v=AchsISi5178')
     
     else:
-        bot.send_message(message.chat.id, 'Какой урок ты ищешь?') 
+        bot.send_message(message.chat.id, 'Какой урок ты ищешь? У меня есть почти все, с 1 по 111') 
 
         
 bot.polling( none_stop = True )
