@@ -14,7 +14,7 @@ def start_message(message):
 def send_text(message):
     fck_list = ["🖕","🖕🏻","🖕🏼","🖕🏽","🖕🏾","🖕🏿"] #tralling
     fst_list = ["🤛","🤛🏻","🤛🏼","🤛🏽","🤛🏾","🤛🏿"] #tralling
-    ape_list = ["🙈","🙉","🙊","🐵","🐒","Эйп"] #tralling
+    ape_list = ["🙈","🙉","🙊","🐵","🐒"] #tralling
     if message.text.lower() == "1":
         bot.send_message(message.chat.id, 'https://www.youtube.com/watch?v=QA3eSm5uTUY')
            
@@ -354,7 +354,7 @@ def send_text(message):
     elif message.text.lower() in fck_list:
         bot.send_message(message.chat.id, '🖕🏾')        
         
-    elif message.text.lower() == "Эски":
+    elif message.text.lower() == "эски":
         bot.send_message(message.chat.id, str(random.choice(ape_list)))              
         
     elif message.text.lower() == "кто тебя создал?":
