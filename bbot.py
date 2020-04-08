@@ -12,8 +12,9 @@ def start_message(message):
  
 @bot.message_handler(content_types=['text'])
 def send_text(message):
-    fck_list = ["🖕","🖕🏻","🖕🏼","🖕🏽","🖕🏾","🖕🏿"]
-    fst_list = ["🤛","🤛🏻","🤛🏼","🤛🏽","🤛🏾","🤛🏿"]
+    fck_list = ["🖕","🖕🏻","🖕🏼","🖕🏽","🖕🏾","🖕🏿"] #tralling
+    fst_list = ["🤛","🤛🏻","🤛🏼","🤛🏽","🤛🏾","🤛🏿"] #tralling
+    ape_list = ["🙈","🙉","🙊","🐵","🐒","Эйп"] #tralling
     if message.text.lower() == "1":
         bot.send_message(message.chat.id, 'https://www.youtube.com/watch?v=QA3eSm5uTUY')
            
@@ -353,8 +354,8 @@ def send_text(message):
     elif message.text.lower() in fck_list:
         bot.send_message(message.chat.id, '🖕🏾')        
         
-    elif message.text.lower() == "эски":
-        bot.send_message(message.chat.id, 'эйп')              
+    elif message.text.lower() == "Эски":
+        bot.send_message(message.chat.id, random.choice(ape_list)))              
         
     elif message.text.lower() == "кто тебя создал?":
         bot.send_message(message.chat.id, '@e_rocket')
