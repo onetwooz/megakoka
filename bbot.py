@@ -1,6 +1,7 @@
 import telebot
 from telebot import types
 import os
+import random
 
 bot = telebot.TeleBot('1194604461:AAFhtKcrxmeMaPcEDMdPDplnqHnHj6f72ZI')
 
@@ -12,6 +13,7 @@ def start_message(message):
 @bot.message_handler(content_types=['text'])
 def send_text(message):
     fck_list = ["🖕","🖕🏻","🖕🏼","🖕🏽","🖕🏾","🖕🏿"]
+    fst_list = ["🤛","🤛🏻","🤛🏼","🤛🏽","🤛🏾","🤛🏿"]
     if message.text.lower() == "1":
         bot.send_message(message.chat.id, 'https://www.youtube.com/watch?v=QA3eSm5uTUY')
            
@@ -345,7 +347,7 @@ def send_text(message):
     elif message.text.lower() == "111":
         bot.send_message(message.chat.id, 'https://www.youtube.com/watch?v=AchsISi5178')
         
-    elif message.text.lower() in ["🤛","🤛🏻","🤛🏼","🤛🏽","🤛🏾","🤛🏿"]:
+    elif message.text.lower() in fst_list:
         bot.send_message(message.chat.id, '🤜🏾')
         
     elif message.text.lower() in fck_list:
