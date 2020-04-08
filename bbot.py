@@ -15,7 +15,7 @@ def send_text(message):
     if message.text.lower() == "1":
         bot.send_message(message.chat.id, 'https://www.youtube.com/watch?v=QA3eSm5uTUY')
         
-    elif message.text.lower() == "112" or "113" or "114":
+    elif message.text.lower() in ["112","113","114"]:
         bot.send_message(message.chat.id, 'Уменя только 111')        
     
     elif message.text.lower() == "2":
@@ -348,8 +348,11 @@ def send_text(message):
     elif message.text.lower() == "111":
         bot.send_message(message.chat.id, 'https://www.youtube.com/watch?v=AchsISi5178')
         
-    elif message.text.lower() == in ["🤛","🤛🏻","🤛🏼","🤛🏽","🤛🏾","🤛🏿"]:
+    elif message.text.lower() == "🤛"or"🤛🏻"or"🤛🏼"or"🤛🏽"or"🤛🏾"or"🤛🏿":
         bot.send_message(message.chat.id, '🤜🏾')
+        
+    elif message.text.lower() == "🖕"or"🖕🏻"or"🖕🏼"or"🖕🏽"or"🖕🏾"or"🖕🏿":
+        bot.send_message(message.chat.id, '🖕🏾')        
                          
     elif message.text.lower() == "эски":
         bot.send_message(message.chat.id, 'эйп')
