@@ -354,7 +354,7 @@ def send_text(message):
     elif message.text.lower() == "эски":
         bot.send_message(message.chat.id, 'эйп')
         
-    elif message.text.lower() == "кто тебя создал?" or "кто твой создатель?" or:
+    elif message.text.lower() == "кто тебя создал?" or "кто твой создатель?":
         bot.send_message(message.chat.id, '@e_rocket')
         
     elif message.text.lower() == "тиай" or "витяй":
