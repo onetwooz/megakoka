@@ -355,7 +355,7 @@ def send_text(message):
         bot.send_message(message.chat.id, '🖕🏾')        
         
     elif message.text.lower() == "Эски":
-        bot.send_message(message.chat.id, random.choice(ape_list)))              
+        bot.send_message(message.chat.id, str(random.choice(ape_list)))              
         
     elif message.text.lower() == "кто тебя создал?":
         bot.send_message(message.chat.id, '@e_rocket')
