@@ -14,10 +14,7 @@ def send_text(message):
         
     if message.text.lower() == "1":
         bot.send_message(message.chat.id, 'https://www.youtube.com/watch?v=QA3eSm5uTUY')
-        
-    elif message.text.lower() in [range(112, 999)]:
-        bot.send_message(message.chat.id, 'Уменя только 111 уроков')        
-    
+           
     elif message.text.lower() == "2":
         bot.send_message(message.chat.id, 'https://www.youtube.com/watch?v=-vaCNYqKrJQ&t')
     
@@ -357,10 +354,10 @@ def send_text(message):
     elif message.text.lower() == "эски":
         bot.send_message(message.chat.id, 'эйп')
         
-    elif message.text.lower() == "кто тебя создал?":
+    elif message.text.lower() == "кто тебя создал?" or "кто твой создатель?" or:
         bot.send_message(message.chat.id, '@e_rocket')
         
-    elif message.text.lower() == "тиай":
+    elif message.text.lower() == "тиай" or "витяй":
         sti = open('static/sticker.webp', 'rb')
         bot.send_sticker(message.chat.id, sti)        
         
