@@ -266,7 +266,7 @@ def send_text(message):
     elif message.text.lower() == "85":
         bot.send_message(message.chat.id, 'https://www.youtube.com/watch?v=juoiLkiMNIc')
     
-    elif message.text.lower() == "86":
+    elif message.text.lower() == "86";"777":
         bot.send_message(message.chat.id, 'С 86 по 98 и со 101 по 110 видосов нет')
     
     elif message.text.lower() == "87":
