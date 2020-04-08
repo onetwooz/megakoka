@@ -11,7 +11,6 @@ def start_message(message):
  
 @bot.message_handler(content_types=['text'])
 def send_text(message):
-        
     if message.text.lower() == "1":
         bot.send_message(message.chat.id, 'https://www.youtube.com/watch?v=QA3eSm5uTUY')
            
