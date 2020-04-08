@@ -1,1 +1,1 @@
-worker: python bbot.py
+worker: python megakoka.py
