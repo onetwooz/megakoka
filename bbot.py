@@ -348,10 +348,13 @@ def send_text(message):
     elif message.text.lower() == "эски":
         bot.send_message(message.chat.id, 'эйп')
         
+    elif message.text.lower() in ["🤛","🤛🏻","🤛🏼","🤛🏽","🤛🏾","🤛🏿"]
+        bot.send_message(message.chat.id, '🤛🏾')        
+        
     elif message.text.lower() == "кто тебя создал?":
         bot.send_message(message.chat.id, '@e_rocket')
         
-    elif message.text.lower() == "тиай":
+    elif message.text.lower() == "тиай" or "витяй":
         sti = open('static/sticker.webp', 'rb')
         bot.send_sticker(message.chat.id, sti)        
         
