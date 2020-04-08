@@ -11,12 +11,12 @@ def start_message(message):
  
 @bot.message_handler(content_types=['text'])
 def send_text(message):
-    
-    if message.text.lower() == "112" or "113" or "114":
-        bot.send_message(message.chat.id, 'Уменя только 111')    
-    
+        
     if message.text.lower() == "1":
         bot.send_message(message.chat.id, 'https://www.youtube.com/watch?v=QA3eSm5uTUY')
+        
+    elif message.text.lower() == "112" or "113" or "114":
+        bot.send_message(message.chat.id, 'Уменя только 111')        
     
     elif message.text.lower() == "2":
         bot.send_message(message.chat.id, 'https://www.youtube.com/watch?v=-vaCNYqKrJQ&t')
@@ -348,7 +348,7 @@ def send_text(message):
     elif message.text.lower() == "111":
         bot.send_message(message.chat.id, 'https://www.youtube.com/watch?v=AchsISi5178')
         
-    elif message.text.lower() == "🤛🏾":
+    elif message.text.lower() == in ["🤛","🤛🏻","🤛🏼","🤛🏽","🤛🏾","🤛🏿"]:
         bot.send_message(message.chat.id, '🤜🏾')
                          
     elif message.text.lower() == "эски":
