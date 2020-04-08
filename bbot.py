@@ -352,8 +352,8 @@ def send_text(message):
         bot.send_message(message.chat.id, '🤜🏾')
         
     elif message.text.lower() == "🖕"or"🖕🏻"or"🖕🏼"or"🖕🏽"or"🖕🏾"or"🖕🏿":
-        bot.send_message(message.chat.id, '🖕🏾')        
-                         
+        bot.send_message(message.chat.id, '🖕🏾')
+        
     elif message.text.lower() == "эски":
         bot.send_message(message.chat.id, 'эйп')
         
