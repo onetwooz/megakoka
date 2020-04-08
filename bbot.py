@@ -11,6 +11,12 @@ def start_message(message):
  
 @bot.message_handler(content_types=['text'])
 def send_text(message):
+    
+    pstop = ("112","113")
+    
+    if message.text.lower() == pstop:
+        bot.send_message(message.chat.id, 'Уменя только 111')    
+    
     if message.text.lower() == "1":
         bot.send_message(message.chat.id, 'https://www.youtube.com/watch?v=QA3eSm5uTUY')
     
