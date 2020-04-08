@@ -15,6 +15,7 @@ def send_text(message):
     fck_list = ["🖕","🖕🏻","🖕🏼","🖕🏽","🖕🏾","🖕🏿"] #tralling
     fst_list = ["🤛","🤛🏻","🤛🏼","🤛🏽","🤛🏾","🤛🏿"] #tralling
     ape_list = ["🙈","🙉","🙊","🐵","🐒"] #tralling
+    daddy_list =["кто тебя создал?","кто твой создатель?","кто твой отец?","кто твой папочка?"]
     if message.text.lower() == "1":
         bot.send_message(message.chat.id, 'https://www.youtube.com/watch?v=QA3eSm5uTUY')
            
@@ -357,7 +358,7 @@ def send_text(message):
     elif message.text.lower() == "эски":
         bot.send_message(message.chat.id, str(random.choice(ape_list)))              
         
-    elif message.text.lower() == "кто тебя создал?":
+    elif message.text.lower() in daddy_list:
         bot.send_message(message.chat.id, '@e_rocket')
         
     elif message.text.lower() == "тиай":
