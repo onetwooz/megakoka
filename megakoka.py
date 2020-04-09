@@ -34,6 +34,6 @@ def send_text(message):
         bot.send_sticker(message.chat.id, sti)        
         
     else:
-        bot.send_message(message.chat.id, 'У меня есть уроки с 1 до 111') 
+        bot.send_message(message.chat.id, 'Чо каво, сучара') 
 
 bot.polling( none_stop = True) 
