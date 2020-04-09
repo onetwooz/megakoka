@@ -8,16 +8,18 @@ bot = telebot.TeleBot('1023733994:AAFCmwj-kiOfOW57APcXvZqnyBWCZnOMiBU')
 @bot.message_handler(commands=['start'])
 def start_message(message):
     bot.send_sticker(message.chat.id, 'CAACAgIAAxkBAAI-hl6JrcYcXMNK-Hlb3ItPeqCgPFzqAALqAgACtXHaBr_PemH5zBx1GAQ')
-    bot.send_message(message.chat.id, 'Привет, {0.first_name}!\nЯ - {1.first_name}. Фух... живой'.format(message.from_user, bot.get_me(), parse_mode="html"))
+    bot.send_message(message.chat.id, 'Йо, {0.first_name}!\nЯ живой'.format(message.from_user, bot.get_me(), parse_mode="html"))
  
 @bot.message_handler(content_types=['text'])
 def send_text(message):
     fck_list = ["🖕","🖕🏻","🖕🏼","🖕🏽","🖕🏾","🖕🏿"] #tralling
     fst_list = ["🤛","🤛🏻","🤛🏼","🤛🏽","🤛🏾","🤛🏿"] #tralling
     ape_list = ["🙈","🙉","🙊","🐵","🐒"] #tralling
-    daddy_list =["кто тебя создал?","кто твой создатель?","кто твой отец?","кто твой папочка?"]
+    daddy_list = ["кто тебя создал?","кто твой создатель?","кто твой отец?","кто твой папочка?"]
+    hi_list = ["привет",]
+    if message.text.lower()
     
-    if message.text.lower() in fst_list:
+    elif message.text.lower() in fst_list:
         bot.send_message(message.chat.id, '🤜🏾')
         
     elif message.text.lower() in fck_list:
