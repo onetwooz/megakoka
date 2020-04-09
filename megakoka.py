@@ -17,7 +17,7 @@ def send_text(message):
     ape_list = ["🙈","🙉","🙊","🐵","🐒"] #tralling
     daddy_list =["кто тебя создал?","кто твой создатель?","кто твой отец?","кто твой папочка?"]
     hi_list = ["привет","здарова","здорова","йо","сап"]
-    hian_list = ["йо","ну привет","здарова"]
+    hian_list = ["Йо","Ну привет","Здарова"]
     if message.text.lower() in hi_list:
         bot.send_message(message.chat.id, str(random.choice(hian_list)))
     
