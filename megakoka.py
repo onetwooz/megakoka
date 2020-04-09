@@ -16,13 +16,9 @@ def send_text(message):
     fst_list = ["🤛","🤛🏻","🤛🏼","🤛🏽","🤛🏾","🤛🏿"] #tralling
     ape_list = ["🙈","🙉","🙊","🐵","🐒"] #tralling
     daddy_list =["кто тебя создал?","кто твой создатель?","кто твой отец?","кто твой папочка?"]
-    hi_list = ["привет","здарова","здорова","йо","сап"]
+    hi_list = ["привет","здарова","здорова","йо","сап","здравствуй"]
     hian_list = ["Йо","Ну привет","Здарова","Привет","Сап"]
-    pstop = message.text.lower()
-    if pstop > 160 
-        bot.send_message(message.chat.id, ебать много)
-            
-    elif message.text.lower() in hi_list:
+    if message.text.lower() in hi_list:
         bot.send_message(message.chat.id, str(random.choice(hian_list)))
     
     elif message.text.lower() in fst_list:
