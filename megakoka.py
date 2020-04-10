@@ -38,7 +38,8 @@ def send_text(message):
         bot.send_message(message.chat.id, 'Чо каво, сучара!?')
         
 @bot.message_handler(content_types=['text'])
-def fck(message):        
+def fck(message):
+    fck_list = ["🖕","🖕🏻","🖕🏼","🖕🏽","🖕🏾","🖕🏿"] #tralling
     if message.text.lower() in fck_list:
         i = 1
         while (i < 5):
