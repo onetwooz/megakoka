@@ -2,7 +2,6 @@ import telebot
 from telebot import types
 import os
 import random
-import time
 
 bot = telebot.TeleBot('1023733994:AAFCmwj-kiOfOW57APcXvZqnyBWCZnOMiBU')
 
@@ -26,13 +25,13 @@ def send_text(message):
         bot.send_message(message.chat.id, '🤜🏾')
         
     elif message.text.lower() in fck_list:
-        i = 1
-        while (i < 5):
-            if message.text.lower() in fck_list:
+        @bot.message_handler(content_types=['text'])
+        def send_text(message):
+            i = 1
+            while (i < 5):
                 bot.send_message(message.chat.id, '🖕🏾')
                 i += 1
-                time.sleep()
-
+                
         else:
             bot.send_message(message.chat.id, '{0.first_name}! Иди на хуй' .format(message.from_user, bot.get_me(), parse_mode="html"))
             
