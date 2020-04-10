@@ -25,8 +25,13 @@ def send_text(message):
         bot.send_message(message.chat.id, '🤜🏾')
         
     elif message.text.lower() in fck_list:
-        for i in range(10):
-            bot.send_message(message.chat.id, '🖕🏾')        
+        afck = 1
+        bfck = 5
+        while (bfck>afck):
+            afck = afck + 1
+            bot.send_message(message.chat.id, '🖕🏾')
+            else:
+                bot.send_message(message.chat.id, 'Иди нахуй')
         
     elif message.text.lower() == "эски":
         bot.send_message(message.chat.id, str(random.choice(ape_list)))              
