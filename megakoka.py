@@ -30,7 +30,7 @@ def send_text(message):
         while (b > a):
             a = a + 1
             bot.send_message(message.chat.id, '🖕🏾')
-            if (a>=b)
+            if (b < a) 
                bot.send_message(message.chat.id, 'Иди нахуй')
            
 
