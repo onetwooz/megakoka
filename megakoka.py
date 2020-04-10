@@ -31,9 +31,8 @@ def send_text(message):
             if message.text.lower() in fck_list:
                 i += 1
                 bot.send_message(message.chat.id, '🖕🏾')
-                
         else:
-            bot.send_message(message.chat.id, 'Иди на хуй')
+            bot.send_message(message.chat.id, '{0.first_name}! Иди на хуй' .format(message.from_user, bot.get_me(), parse_mode="html")
             
     elif message.text.lower() == "эски":
         bot.send_message(message.chat.id, str(random.choice(ape_list)))              
