@@ -30,6 +30,7 @@ def send_text(message):
             if message.text.lower() in fck_list:
                 bot.send_message(message.chat.id, '🖕🏾')
                 i = i + 1
+                break
         else:
             bot.send_message(message.chat.id, 'Иди на хуй')
             
