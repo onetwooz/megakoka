@@ -37,7 +37,7 @@ def send_text(message):
     else:
         bot.send_message(message.chat.id, 'Чо каво, сучара!?')
         
-@bot.fkc_handler(content_types=['text'])        
+@bot.message_handler(content_types=['text'])        
 def send_text(message):        
     if message.text.lower() in fck_list:
         i = 1
