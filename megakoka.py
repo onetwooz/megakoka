@@ -25,7 +25,6 @@ def send_text(message):
         bot.send_message(message.chat.id, '🤜🏾')
         
     elif message.text.lower() in fck_list:
-        @bot.message_handler(content_types=['text'])
         def send_text(message):
             i = 1
             while (i < 5):
