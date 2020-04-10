@@ -10,17 +10,7 @@ def start_message(message):
     bot.send_sticker(message.chat.id, 'CAACAgIAAxkBAAI-hl6JrcYcXMNK-Hlb3ItPeqCgPFzqAALqAgACtXHaBr_PemH5zBx1GAQ')
     bot.send_message(message.chat.id, 'Йо, {0.first_name}!\nЯ живой. '.format(message.from_user, bot.get_me(), parse_mode="html"))
     
-@bot.message_handler(content_types=['text'])        
-def send_text(message):        
-    if message.text.lower() in fck_list:
-        i = 1
-        while (i < 5):
-            bot.send_message(message.chat.id, '🖕🏾')
-            i += 1
-                
-        else:
-            bot.send_message(message.chat.id, '{0.first_name}! Иди на хуй' .format(message.from_user, bot.get_me(), parse_mode="html"))
-            
+
 @bot.message_handler(content_types=['text'])
 def send_text(message):
     fck_list = ["🖕","🖕🏻","🖕🏼","🖕🏽","🖕🏾","🖕🏿"] #tralling
