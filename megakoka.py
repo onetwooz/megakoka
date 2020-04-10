@@ -19,7 +19,7 @@ def send_text(message):
     hi_list = ["привет","здарова","здорова","йо","сап","здравствуй"]
     hian_list = ["Йо","Ну привет","Здарова","Привет","Сап"]
     fck_list = ["🖕", "🖕🏻", "🖕🏼", "🖕🏽", "🖕🏾", "🖕🏿"]  # tralling
-    i = 1
+    i = 0
     if message.text.lower() in hi_list:
         bot.send_message(message.chat.id, str(random.choice(hian_list)))
 
