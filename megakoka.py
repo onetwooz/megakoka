@@ -10,8 +10,8 @@ def start_message(message):
     bot.send_sticker(message.chat.id, 'CAACAgIAAxkBAAI-hl6JrcYcXMNK-Hlb3ItPeqCgPFzqAALqAgACtXHaBr_PemH5zBx1GAQ')
     bot.send_message(message.chat.id, 'Йо, {0.first_name}!\nЯ живой. '.format(message.from_user, bot.get_me(), parse_mode="html"))
     
-@bot.d_handler(content_types=['text'])
-def send_text(message):        
+@bot.message_handler(content_types=['text'])
+def fck(message):        
     if message.text.lower() in fck_list:
         i = 1
         while (i < 5):
