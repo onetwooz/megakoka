@@ -27,10 +27,11 @@ def send_text(message):
     elif message.text.lower() in fck_list:
         i = 1
         while (i < 5):
+            bot.send_message(message.chat.id, '🖕🏾')
             if message.text.lower() in fck_list:
+                i += 1
                 bot.send_message(message.chat.id, '🖕🏾')
-                i = i + 1
-                break
+                
         else:
             bot.send_message(message.chat.id, 'Иди на хуй')
             
