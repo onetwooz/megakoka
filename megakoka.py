@@ -30,8 +30,8 @@ def send_text(message):
             bot.send_message(message.chat.id, '🖕🏾')
             i += 1
                 
-            else:
-                bot.send_message(message.chat.id, '{0.first_name}! Иди на хуй' .format(message.from_user, bot.get_me(), parse_mode="html"))
+        else:
+            bot.send_message(message.chat.id, '{0.first_name}! Иди на хуй' .format(message.from_user, bot.get_me(), parse_mode="html"))
             
     elif message.text.lower() == "эски":
         bot.send_message(message.chat.id, str(random.choice(ape_list)))              
