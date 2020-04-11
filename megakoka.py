@@ -25,10 +25,10 @@ def send_text(message):
     
     if message.text.lower() == "расклад":
         bot.send_message(message.chat.id, 'Где?')
-            observation = owm.weather_at_place('message.text')
-            w = observation.get_weather()
-            temp = w.get_temperature('celsius')["temp"]
-            bot.send_message(message.chat.id, w + temp)
+            #observation = owm.weather_at_place('message.text')
+            #w = observation.get_weather()
+            #temp = w.get_temperature('celsius')["temp"]
+            #bot.send_message(message.chat.id, w + temp)
     
     elif message.text.lower() in hi_list:
         bot.send_message(message.chat.id, str(random.choice(hian_list)))
