@@ -2,7 +2,7 @@ import telebot
 from telebot import types
 import os
 import random
-import pyowm
+#import pyowm
 
 bot = telebot.TeleBot('1023733994:AAFCmwj-kiOfOW57APcXvZqnyBWCZnOMiBU')
 i = 1
