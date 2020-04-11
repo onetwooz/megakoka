@@ -2,11 +2,11 @@ import telebot
 from telebot import types
 import os
 import random
-#import pyowm
+import pyowm
 
 bot = telebot.TeleBot('1023733994:AAFCmwj-kiOfOW57APcXvZqnyBWCZnOMiBU')
 i = 1
-#owm = pyowm.OWM('your-API-key')
+owm = pyowm.OWM('1d98b7784fc6615b03ed79fd09e02050', Language = "RU")
 
 @bot.message_handler(commands=['start'])
 def start_message(message):
@@ -23,9 +23,16 @@ def send_text(message):
     hian_list = ["Йо","Ну привет","Здарова","Привет","Сап"]
     fck_list = ["🖕", "🖕🏻", "🖕🏼", "🖕🏽", "🖕🏾", "🖕🏿"]  # tralling
     
+    if message.text.lower() == "расклад":
+        bot.send_message(message.chat.id, "Где?")
+        if message.text.lower() == "":
+            observation = owm.weather_at_place(message.text)
+            w = observation.get_weather()
+            temp = w.get_temperature('celsius')["temp"]
+            bot.send_message(message.chat.id, temp)
     
-    if message.text.lower() in hi_list:
-        bot.send_message(message.chat.id, str(random.choice(hian_list)))
+    elif message.text.lower() in hi_list:
+        bot.send_message(message.chat.id, str(random.choice( hian_list )))
 
     elif message.text.lower() in fst_list:
         bot.send_message(message.chat.id, '🤜🏾')
@@ -36,7 +43,7 @@ def send_text(message):
             i += 1
         else:
             i = 1
-            bot.send_message(message.chat.id, '{0.first_name}! Иди на хуй'.format(message.from_user, bot.get_me(), parse_mode = "html"))
+            bot.send_message(message.chat.id, '{0.first_name}! Иди на хуй'.format( message.from_user, bot.get_me(), parse_mode = "html" ))
 
     elif message.text.lower() == "эски":
         bot.send_message(message.chat.id, str(random.choice(ape_list)))
