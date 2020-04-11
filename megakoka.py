@@ -6,7 +6,7 @@ import pyowm
 
 bot = telebot.TeleBot('1023733994:AAFCmwj-kiOfOW57APcXvZqnyBWCZnOMiBU')
 i = 1
-owm = pyowm.OWM('1d98b7784fc6615b03ed79fd09e02050', Language = "RU")
+owm = pyowm.OWM('1d98b7784fc6615b03ed79fd09e02050')
 
 @bot.message_handler(commands=['start'])
 def start_message(message):
