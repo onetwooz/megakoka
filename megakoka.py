@@ -23,14 +23,8 @@ def send_text(message):
     hian_list = ["Йо","Ну привет","Здарова","Привет","Сап"]
     fck_list = ["🖕", "🖕🏻", "🖕🏼", "🖕🏽", "🖕🏾", "🖕🏿"]  # tralling
     
-    if message.text.lower() == "расклад":
-        bot.send_message(message.chat.id, 'Где?')
-            #observation = owm.weather_at_place('message.text')
-            #w = observation.get_weather()
-            #temp = w.get_temperature('celsius')["temp"]
-            #bot.send_message(message.chat.id, w + temp)
     
-    elif message.text.lower() in hi_list:
+    if message.text.lower() in hi_list:
         bot.send_message(message.chat.id, str(random.choice(hian_list)))
 
     elif message.text.lower() in fst_list:
