@@ -6,7 +6,7 @@ import pyowm
 
 bot = telebot.TeleBot('1023733994:AAFCmwj-kiOfOW57APcXvZqnyBWCZnOMiBU')
 i = 1
-owm = pyowm.OWM('1d98b7784fc6615b03ed79fd09e02050')
+#owm = pyowm.OWM('1d98b7784fc6615b03ed79fd09e02050')
 
 @bot.message_handler(commands=['start'])
 def start_message(message):
@@ -25,11 +25,11 @@ def send_text(message):
     
     if message.text.lower() == "расклад":
         bot.send_message(message.chat.id, "Где?")
-        if message.text.lower() == "":
-            observation = owm.weather_at_place(message.text)
-            w = observation.get_weather()
-            temp = w.get_temperature('celsius')["temp"]
-            bot.send_message(message.chat.id, temp)
+        #if message.text.lower() == "":
+            #observation = owm.weather_at_place(message.text)
+            #w = observation.get_weather()
+            #temp = w.get_temperature('celsius')["temp"]
+            #bot.send_message(message.chat.id, temp)
     
     elif message.text.lower() in hi_list:
         bot.send_message(message.chat.id, str(random.choice( hian_list )))
