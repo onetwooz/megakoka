@@ -6,7 +6,7 @@ import pyowm
 
 bot = telebot.TeleBot('1023733994:AAFCmwj-kiOfOW57APcXvZqnyBWCZnOMiBU')
 i = 1
-owm = pyowm.OWM('your-API-key')
+#owm = pyowm.OWM('your-API-key')
 
 @bot.message_handler(commands=['start'])
 def start_message(message):
