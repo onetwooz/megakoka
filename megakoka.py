@@ -2,20 +2,24 @@ import telebot
 from telebot import types
 import os
 import random
-#import pyowm
+import pyowm
 
 bot = telebot.TeleBot('1023733994:AAFCmwj-kiOfOW57APcXvZqnyBWCZnOMiBU')
 i = 1
-#owm = pyowm.OWM('1d98b7784fc6615b03ed79fd09e02050')
+owm = pyowm.OWM('1d98b7784fc6615b03ed79fd09e02050')
 
 @bot.message_handler(commands=['start'])
 def start_message(message):
     bot.send_sticker(message.chat.id, 'CAACAgIAAxkBAAI-hl6JrcYcXMNK-Hlb3ItPeqCgPFzqAALqAgACtXHaBr_PemH5zBx1GAQ')
     bot.send_message(message.chat.id, 'Йо, {0.first_name}!\nЯ живой. '.format(message.from_user, bot.get_me(), parse_mode="html"))
 
-@bot.message_handler(content_types=['text'])
+@bot.message_handler(content_types=['text']) 
 def send_text(message):
     global i
+    observation = owm.weather_at_place(Екатеринбург)
+    w = observation.get_weather()
+    temp = w.get_temperature('celsius')["temp"]
+    
     fst_list = ["🤛","🤛🏻","🤛🏼","🤛🏽","🤛🏾","🤛🏿"] #tralling
     ape_list = ["🙈","🙉","🙊","🐵","🐒"] #tralling
     daddy_list =["кто тебя создал?","кто твой создатель?","кто твой отец?","кто твой папочка?"]
@@ -24,13 +28,8 @@ def send_text(message):
     fck_list = ["🖕", "🖕🏻", "🖕🏼", "🖕🏽", "🖕🏾", "🖕🏿"]  # tralling
     
     if message.text.lower() == "расклад":
-        bot.send_message(message.chat.id, "Где?")
-        #if message.text.lower() == "":
-            #observation = owm.weather_at_place(message.text)
-            #w = observation.get_weather()
-            #temp = w.get_temperature('celsius')["temp"]
-            #bot.send_message(message.chat.id, temp)
-    
+        bot.send_message(message.chat.id, temp)
+
     elif message.text.lower() in hi_list:
         bot.send_message(message.chat.id, str(random.choice( hian_list )))
 
@@ -41,9 +40,6 @@ def send_text(message):
         if i < 5:
             bot.send_message(message.chat.id, '🖕🏾')
             i += 1
-            
-        elif i = 5:
-            bot.send_message(message.chat.id, 'Петушара')
             
         else:
             i = 1
