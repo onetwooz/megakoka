@@ -41,7 +41,11 @@ def send_text(message):
         if i < 5:
             bot.send_message(message.chat.id, '🖕🏾')
             i += 1
-        
+            
+        elif i = 5:
+            bot.send_message(message.chat.id, 'Петушара')
+            i += 1
+            
         else:
             i = 1
             bot.send_message(message.chat.id, '{0.first_name}! Иди на хуй'.format( message.from_user, bot.get_me(), parse_mode = "html" ))
