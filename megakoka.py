@@ -44,7 +44,6 @@ def send_text(message):
             
         elif i = 5:
             bot.send_message(message.chat.id, 'Петушара')
-            i += 1
             
         else:
             i = 1
