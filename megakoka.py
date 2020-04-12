@@ -38,9 +38,14 @@ def send_text(message):
         bot.send_message(message.chat.id, '🤜🏾')
 
     elif message.text.lower() in fck_list:
-        if i < 5:
+        if i < 5 or i < 10:
             bot.send_message(message.chat.id, '🖕🏾')
             i += 1
+            
+        if i = 8:
+            bot.send_message(message.chat.id, 'Заебал сука')
+            i += 1
+        
         else:
             i = 1
             bot.send_message(message.chat.id, '{0.first_name}! Иди на хуй'.format( message.from_user, bot.get_me(), parse_mode = "html" ))
