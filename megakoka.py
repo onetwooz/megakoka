@@ -41,10 +41,6 @@ def send_text(message):
         if i < 5:
             bot.send_message(message.chat.id, '🖕🏾')
             i += 1
-            
-        if i = 8:
-            bot.send_message(message.chat.id, 'Заебал сука')
-            i += 1
         
         else:
             i = 1
