@@ -29,7 +29,7 @@ def send_text(message):
         bot.send_message(message.chat.id, f[a.index(message.text)])
         
     elif message.text.lower() in b:
-    bot.send_message(message.chat.id, f[b.index(message.text)])
+        bot.send_message(message.chat.id, f[b.index(message.text)])
 
     elif message.text.lower() in hi_list:
         bot.send_message(message.chat.id, str(random.choice( hian_list )))
