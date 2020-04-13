@@ -26,10 +26,10 @@ def send_text(message):
     nn = ['z','x','c','v']
     
     if message.text.lower() in gg:
-        bot.send_message(message.chat.id, nn[gg.index(message.text)])
+        bot.send_message(message.chat.id, nn[gg.index(message.text.lower())])
         
     elif message.text.lower() in bb:
-        bot.send_message(message.chat.id, nn[bb.index(message.text)])
+        bot.send_message(message.chat.id, nn[bb.index(message.text.lower())])
 
     elif message.text.lower() in hi_list:
         bot.send_message(message.chat.id, str(random.choice( hian_list )))
