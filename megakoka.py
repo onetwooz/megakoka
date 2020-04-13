@@ -21,15 +21,15 @@ def send_text(message):
     hi_list = ["привет","здарова","здорова","йо","сап","здравствуй"]
     hian_list = ["Йо","Ну привет","Здарова","Привет","Сап"]
     fck_list = ["🖕", "🖕🏻", "🖕🏼", "🖕🏽", "🖕🏾", "🖕🏿"]  # tralling
-    a = ['q', 'w', 'e', 'r']
-    b = ['a', 's', 'd', 'f']
-    c = ['z', 'x', 'c', 'v']
+    gg = ['q', 'w', 'e', 'r']
+    bb = ['a', 's', 'd', 'f']
+    nn = ['z', 'x', 'c', 'v']
     
-    if message.text.lower() in a:
-        bot.send_message(message.chat.id, c[a.index(message.text)])
+    if message.text.lower() in gg:
+        bot.send_message(message.chat.id, nn[gg.index(message.text)])
         
-    elif message.text.lower() in b:
-        bot.send_message(message.chat.id, c[b.index(message.text)])
+    elif message.text.lower() in bb:
+        bot.send_message(message.chat.id, nn[bb.index(message.text)])
 
     elif message.text.lower() in hi_list:
         bot.send_message(message.chat.id, str(random.choice( hian_list )))
