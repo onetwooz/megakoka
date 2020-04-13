@@ -24,9 +24,16 @@ def send_text(message):
     a = ['q', 'w', 'e', 'r']
     b = ['a', 's', 'd', 'f']
     c = ['z', 'x', 'c', 'v']
+    
+    if <сообщение> in s:
+    <ответ> = f[s.index(<сообщение>)]
+    elif <сообщение> in d:
+    <ответ> = f[d.index(<сообщение>)]
 
-    if message.text.lower() == a[]:
-        bot.send_message(message.chat.id, c[])    
+    if message.text.lower() in a:
+        bot.send_message(message.chat.id, f[a.index(message.text)])
+    elif message.text.lower() in b:
+    bot.send_message(message.chat.id, f[b.index(message.text)])
 
     elif message.text.lower() in hi_list:
         bot.send_message(message.chat.id, str(random.choice( hian_list )))
