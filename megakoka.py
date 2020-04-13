@@ -11,7 +11,7 @@ def start_message(message):
     f = open('stat.txt', 'w')
     f.write("+1" + "\n")
     f.close()    
-    bot.send_sticker(message.chat.id, 'CAACAgIAAxkBAAI-hl6JrcYcXMNK-Hlb3ItPeqCgPFzqAALqAgACtXHaBr_PemH5zBx1GAQ')
+    bot.send_sticker(message.chat.id, 'f6dedfa0-0976-4b6c-940c-f1cba494dc67')
     bot.send_message(message.chat.id, 'Йо, {0.first_name}!\nЯ живой. '.format(message.from_user, bot.get_me(), parse_mode="html"))
 
 @bot.message_handler(content_types=['text']) 
