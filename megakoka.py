@@ -37,7 +37,7 @@ def send_text(message):
             
         elif i == 3:
             bot.send_message(message.chat.id, '😡')
-             i += 1
+            i += 1
             
         else:
             i = 1
