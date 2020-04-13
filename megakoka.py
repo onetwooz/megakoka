@@ -8,10 +8,8 @@ i = 1
 
 @bot.message_handler(commands=['start'])
 def start_message(message):
-    f = open('stat.txt', 'w')
-    f.write("+1" + "\n")
-    f.close()
-    bot.send_sticker(message.chat.id, 'id smila')
+    mkhi = open('static/megakokhi.tgs', 'rb')
+    bot.send_sticker(message.chat.id, mkhi)
     bot.send_message(message.chat.id, 'Йо, {0.first_name}!\nЯ живой. '.format(message.from_user, bot.get_me(), parse_mode="html"))
 
 @bot.message_handler(content_types=['text'])
