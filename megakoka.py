@@ -21,9 +21,9 @@ def send_text(message):
     hi_list = ["привет","здарова","здорова","йо","сап","здравствуй"]
     hian_list = ["Йо","Ну привет","Здарова","Привет","Сап"]
     fck_list = ["🖕", "🖕🏻", "🖕🏼", "🖕🏽", "🖕🏾", "🖕🏿"]  # tralling
-    gg = ['q', 'w', 'e', 'r']
-    bb = ['a', 's', 'd', 'f']
-    nn = ['z', 'x', 'c', 'v']
+    gg = ['q','w','e','r']
+    bb = ['a','s','d','f']
+    nn = ['z','x','c','v']
     
     if message.text.lower() in gg:
         bot.send_message(message.chat.id, nn[gg.index(message.text)])
