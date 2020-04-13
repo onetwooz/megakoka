@@ -10,11 +10,11 @@ i = 1
 def start_message(message):
     f = open('stat.txt', 'w')
     f.write("+1" + "\n")
-    f.close()    
-    bot.send_sticker(message.chat.id, 'f6dedfa0-0976-4b6c-940c-f1cba494dc67')
+    f.close()
+    bot.send_sticker(message.chat.id, 'id smila')
     bot.send_message(message.chat.id, 'Йо, {0.first_name}!\nЯ живой. '.format(message.from_user, bot.get_me(), parse_mode="html"))
 
-@bot.message_handler(content_types=['text']) 
+@bot.message_handler(content_types=['text'])
 def send_text(message):
     global i
     fst_list = ["🤛","🤛🏻","🤛🏼","🤛🏽","🤛🏾","🤛🏿"] #tralling
@@ -23,7 +23,7 @@ def send_text(message):
     hi_list = ["привет","здарова","здорова","йо","сап","здравствуй"]
     hian_list = ["Йо","Ну привет","Здарова","Привет","Сап"]
     fck_list = ["🖕", "🖕🏻", "🖕🏼", "🖕🏽", "🖕🏾", "🖕🏿"]  # tralling
-    
+
     if message.text.lower() in hi_list:
         bot.send_message(message.chat.id, str(random.choice( hian_list )))
 
@@ -34,11 +34,11 @@ def send_text(message):
         if i < 3:
             bot.send_message(message.chat.id, '🖕🏾')
             i += 1
-            
+
         elif i == 3:
             bot.send_message(message.chat.id, '😡')
             i += 1
-            
+
         else:
             i = 1
             bot.send_message(message.chat.id, '{0.first_name}! Иди на хуй'.format( message.from_user, bot.get_me(), parse_mode = "html" ))
