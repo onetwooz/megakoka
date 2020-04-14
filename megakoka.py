@@ -15,6 +15,7 @@ def start_message(message):
 @bot.message_handler(content_types=['text'])
 def send_text(message):
     global i
+    glist = ["😒", "Что поинтереснее есть?", "С тобой скучно", "💩", "М-да..."]
     fst_list = ["🤛","🤛🏻","🤛🏼","🤛🏽","🤛🏾","🤛🏿"] #tralling
     ape_list = ["🙈","🙉","🙊","🐵","🐒"] #tralling
     daddy_list =["кто тебя создал?","кто твой создатель?","кто твой отец?","кто твой папочка?"]
@@ -28,11 +29,8 @@ def send_text(message):
         bot.send_message(message.chat.id, minia[minia14.index(message.text.lower())])
         bot.send_message(message.chat.id, descript[minia14.index(message.text.lower())])
        
-    elif len(message.text.lower()) == 1
+    elif len(message.text.lower()) == 1:
         bot.send_message(message.chat.id, "😒")
- 
-    #elif message.text.lower() in minia7:
-        #bot.send_message(message.chat.id, minia[minia7.index(message.text.lower())])
 
     elif message.text.lower() in hi_list:
         bot.send_message(message.chat.id, str(random.choice( hian_list )))
