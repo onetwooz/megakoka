@@ -53,7 +53,7 @@ def send_text(message):
 
         else:
             i = 1
-            bot.send_message(message.chat.id, 'Петушара'))
+            bot.send_message(message.chat.id, 'Петушара')
 
     elif message.text.lower() == "эски":
         bot.send_message(message.chat.id, str(random.choice(ape_list)))
