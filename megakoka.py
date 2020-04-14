@@ -29,8 +29,8 @@ def send_text(message):
         bot.send_message(message.chat.id, minia[minia14.index(message.text.lower())])
         bot.send_message(message.chat.id, descript[minia14.index(message.text.lower())])     
        
-    elif len(message.text.lower()) <= 3:
-        bot.send_message(message.chat.id, str(random.choice( glist )))
+    #elif len(message.text.lower()) <= 3:
+        #bot.send_message(message.chat.id, str(random.choice( glist )))
 
     elif message.text.lower() in hi_list:
         bot.send_message(message.chat.id, str(random.choice( hian_list )))
