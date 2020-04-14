@@ -30,7 +30,7 @@ i ​=​ ​1​
         bot.send_message(message.chat.id, minia[minia14.index(message.text.lower())])
         bot.send_message(message.chat.id, descript[minia14.index(message.text.lower())])
     
-    elif len(message.text.lower()) <= 2:
+    elif len(message.text.lower()) == 1:
         bot.send_message(message.chat.id, str​(random.choice( glist ))) 
 
     ​elif​ message.text.lower() ​in​ hi_list:
