@@ -29,8 +29,6 @@ def send_text(message):
         bot.send_message(message.chat.id, minia[minia14.index(message.text.lower())])
         bot.send_message(message.chat.id, descript[minia14.index(message.text.lower())])     
        
-    elif len(message.text.lower()) == 1:
-        bot.send_message(message.chat.id, str(random.choice( glist )))
 
     elif message.text.lower() in hi_list:
         bot.send_message(message.chat.id, str(random.choice( hian_list )))
@@ -64,6 +62,9 @@ def send_text(message):
     elif message.text.lower() == "тиай":
         sti = open('static/sticker.webp', 'rb')
         bot.send_sticker(message.chat.id, sti)
+        
+    elif len(message.text.lower()) == 1:
+        bot.send_message(message.chat.id, str(random.choice( glist )))        
 
     else:
         bot.send_message(message.chat.id, 'Чо каво, сучара!?')
