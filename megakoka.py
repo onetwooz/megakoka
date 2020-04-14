@@ -63,7 +63,7 @@ def send_text(message):
         sti = open('static/sticker.webp', 'rb')
         bot.send_sticker(message.chat.id, sti)
         
-    elif len(message.text.lower()) <= 2:
+    elif len(message.text.lower()) <= 3:
         bot.send_message(message.chat.id, str(random.choice( glist )))        
 
     else:
