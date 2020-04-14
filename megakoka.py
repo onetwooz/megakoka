@@ -31,7 +31,7 @@ def send_text(message):
         bot.send_message(message.chat.id, descript[minia14.index(message.text.lower())])
         
     elif message.text.lower() == "как дела?" or message.text.lower() == "как дела":
-        bot.send_message(message.chat.id, 'Чай, курить есть')
+        bot.send_message(message.chat.id, 'Всё норм. Чай, курить есть')
        
     elif message.text.lower() in hi_list:
         bot.send_message(message.chat.id, str(random.choice( hian_list )))
