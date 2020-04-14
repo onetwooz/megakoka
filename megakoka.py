@@ -28,6 +28,9 @@ def send_text(message):
         bot.send_message(message.chat.id, minia[minia14.index(message.text.lower())])
         bot.send_message(message.chat.id, descript[minia14.index(message.text.lower())])
        
+    elif len(message.text.lower()) == 1
+        bot.send_message(message.chat.id, "😒")
+ 
     #elif message.text.lower() in minia7:
         #bot.send_message(message.chat.id, minia[minia7.index(message.text.lower())])
 
