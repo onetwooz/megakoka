@@ -10,7 +10,7 @@ i = 1
 def start_message(message):
     mkhi = open('static/megakokhi.tgs', 'rb')
     bot.send_sticker(message.chat.id, mkhi)
-    bot.send_message(message.chat.id, 'Йо, {0.first_name}!\nЯ живой. '.format(message.from_user, bot.get_me(), parse_mode="html"))
+    bot.send_message(message.chat.id, 'Йо, {0.first_name}!'.format(message.from_user, bot.get_me(), parse_mode="html"))
 
 @bot.message_handler(content_types=['text'])
 def send_text(message):
