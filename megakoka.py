@@ -89,7 +89,7 @@ def send_text(message):
         bot.send_message(message.chat.id, str(random.choice( glist )))        
 
     else:
-        bot.send_message(message.chat.id, 'Что делать будем?')
+        bot.send_message(message.chat.id, '🤷🏾‍♂️')
 
 
 bot.polling(none_stop = True)
