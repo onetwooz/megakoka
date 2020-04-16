@@ -32,9 +32,9 @@ def send_text(message):
         bot.send_message(message.chat.id, minia[minia14.index(message.text.lower())])
         bot.send_message(message.chat.id, descript[minia14.index(message.text.lower())])
         
-    elif message.text.lower() in minia7:
-        bot.send_message(message.chat.id, minia[minia7.index(message.text.lower())])
-        bot.send_message(message.chat.id, descript[minia7.index(message.text.lower())]        
+    #elif message.text.lower() in minia7:
+        #bot.send_message(message.chat.id, minia[minia7.index(message.text.lower())])
+        #bot.send_message(message.chat.id, descript[minia7.index(message.text.lower())]        
         
     elif message.text.lower() == "как дела?" or message.text.lower() == "как дела":
         bot.send_message(message.chat.id, 'Всё норм')
